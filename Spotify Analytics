@@ -33,7 +33,7 @@ SELECT artist_name, track_name, avg(popularity), avg(energy), avg(loudness)
     GROUP BY artist_name, track_name;
     
 -- Then I determined who are the Top 10 artist are by popularity.
-SELECT track_name, artist_name, popularity
+SELECT artist_name, track_name, popularity
     FROM BIT_DB.Spotifydata
     ORDER BY popularity DESC
     LIMIT 10;
